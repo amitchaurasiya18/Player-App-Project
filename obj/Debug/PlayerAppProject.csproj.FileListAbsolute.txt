@@ -1,0 +1,7 @@
+D:\Visual Studio Projects (Training)\PlayerAppProject\bin\Debug\PlayerAppProject.exe.config
+D:\Visual Studio Projects (Training)\PlayerAppProject\bin\Debug\PlayerAppProject.exe
+D:\Visual Studio Projects (Training)\PlayerAppProject\bin\Debug\PlayerAppProject.pdb
+D:\Visual Studio Projects (Training)\PlayerAppProject\obj\Debug\PlayerAppProject.csproj.AssemblyReference.cache
+D:\Visual Studio Projects (Training)\PlayerAppProject\obj\Debug\PlayerAppProject.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects (Training)\PlayerAppProject\obj\Debug\PlayerAppProject.exe
+D:\Visual Studio Projects (Training)\PlayerAppProject\obj\Debug\PlayerAppProject.pdb
