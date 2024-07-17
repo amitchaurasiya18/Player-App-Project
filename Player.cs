@@ -12,7 +12,7 @@ namespace PlayerAppProject
         private readonly string _playerName;
         private readonly int _playerAge;
         public const int DEFAULT_AGE = 0;
-        public static int maximumAge = DEFAULT_AGE;
+        public int maximumAge = DEFAULT_AGE;
 
         public Player(int playerId, string playerName) : this(playerId, playerName, DEFAULT_AGE)
         {
@@ -40,19 +40,18 @@ namespace PlayerAppProject
             return _playerAge;
         }
 
-        public Player ReturnWhoIsElder(Player[] players)
+        public void ReturnWhoIsElder(Player[] players, out int elderPlayerId, out string elderPlayerName, out int elderPlayerAge)
         {
-            Player player1 = null;
+            Player elderPlayer = null;
             foreach (Player player in players)
             {
-                if(player._playerAge > DEFAULT_AGE)
-                {
-                    maximumAge = player._playerAge;
-                    player1 = player;
-                }
+                elderPlayer = (elderPlayer == null || player._playerAge > elderPlayer._playerAge) ? player : elderPlayer;
             }
 
-            return player1;
+            elderPlayerId = elderPlayer != null ? elderPlayer._playerId : 0;
+            elderPlayerName = elderPlayer != null ? elderPlayer._playerName : "No Player";
+            elderPlayerAge = elderPlayer != null ? elderPlayer._playerAge : DEFAULT_AGE;
+            
         }
     }
 }

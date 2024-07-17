@@ -61,10 +61,10 @@ namespace PlayerAppProject
                                 Console.WriteLine($"The Player's Age : {selectedPlayer.GetPlayerAge()}");
                                 break;
                             case 3:
-                                Player elderPlayer = selectedPlayer.ReturnWhoIsElder(players);
-                                Console.WriteLine($"The Oldest Player's Id : {elderPlayer.GetPlayerId()}");
-                                Console.WriteLine($"The Oldest Player's Name : {elderPlayer.GetPlayerName()}");
-                                Console.WriteLine($"The Oldest Player's Age : {elderPlayer.GetPlayerAge()}");
+                                selectedPlayer.ReturnWhoIsElder(players, out int elderPlayerId, out string elderPlayerName, out int elderPlayerAge);
+                                Console.WriteLine($"The Oldest Player's Id : {elderPlayerId}");
+                                Console.WriteLine($"The Oldest Player's Name : {elderPlayerName}");
+                                Console.WriteLine($"The Oldest Player's Age : {elderPlayerAge}");
                                 break;
                             case 4:
                                 continueTransactions = false;
